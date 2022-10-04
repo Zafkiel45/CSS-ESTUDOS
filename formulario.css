@@ -7,7 +7,3 @@
 input:default {
     color: green; 
 }
-
-input:default + label {
-    color: red; 
-}
