@@ -5,37 +5,70 @@
 }
 
 .cabecalho {
-    text-align: center;
-    font-family: arial, helvetica, sans-serif;
-    margin: 0% 0% 5% 0%;
-    background-color: grey;
-    padding: 20px;
-    color: white;
-}
-
-main {
-    margin: 3%;
-    background-color: grey;
-    padding: 2%;
-    color: white;
-}
-
-.paragráfo {
-    line-height: 1.5em;
-}
-
-div {
-    display: inline-block;
+    width: 100%;
     background-color: black;
-    border: 1px solid white;
-    padding: 5px;
+    color: white;
 }
 
-.other {
-    width: 100px;
-    position: fixed;
-    top: 100px;
-    right: 0;
+.menu {
+    display: flex;
+}
 
-    background-color: grey;
+.item {
+    list-style: none;
+    margin: 2%;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.biografia {
+    text-align: center;
+    margin: 1.9%;
+    color: white;
+}
+
+.paragráfo  {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 1%;
+    padding: 1%;
+}
+
+#principal {
+    padding: 3%;
+    margin: 15%;
+    background-color: rgb(24, 172, 235);
+    border: 2px solid white;
+    font-family: arial, helvetica, sans-serif; 
+    display: flex;
+}
+
+body {
+    background-color: black;
+}
+
+
+@media (max-width: 768px){
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .paragráfo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    .img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    figure {
+        width: 100%;
+    }
 }
