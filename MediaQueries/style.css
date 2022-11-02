@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(210, 69, 44);
+    height: 50px;
+    width: 100%;
+}
+
+section {
+    background-color: rgb(50, 106, 209);
+    height: 500px;
+    margin: 20px;
+}
+
+.div-1 {
+    background-color: rgb(96, 223, 96);
+    height: 40%;
+    padding-top: 10%;
+}
+
+.div-2 {
+    background-color: rgb(24, 24, 24);
+    height: 40%;
+    padding-bottom: 10%;
+}
+
+.rodapé {
+    height: 100%;
+    background-color: rgba(151, 0, 151, 0.991);
+}
+
+
+@media screen and (max-width: 730px){
+    section {
+        background-color: pink;
+    }
+}
