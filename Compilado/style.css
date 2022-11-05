@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Accent-color tem como função mudar a cor de itens que podem ser interagidos pelo o usuário como uma checkbox*/
+
+input[type=radio]{
+    accent-color: rgb(201, 0, 212);
+
+}
+
+
+input[type=checkbox]{
+    accent-color: rgb(201, 0, 212);
+
+}
+
+
+input[type=range]{
+    accent-color: rgb(201, 0, 212);
+
+}
+
+
+progress {
+    accent-color: red;
+}
+
+
+/*Animações*/
+
+
+/*Animation-Delay especifica o tempo de atraso para uma animação começar... ;-;*/
+
+div.animação
+{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myfirst 5s 2;
+    animation-direction: normal;
+}
+
+/*animação-direction especifica o comportamento que o elemento tem apontando suas direções, sendo seus valores:
+
+Animation-direction: normal; valor padrão. o elemento anda apenas para frente ou para a direção especificada
+Animation-direction: reverse: a animação é reproduzida ao contrário.
+Animation-direction: alternate: a animação é reproduzida primeiro para frente e depois para trás.
+Animation-direction: alternate-reverse; reproduz a animação primeira para trás e depois para frente
+
+*/
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+.my {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-direction: normal;
+    animation: teste 5s 10;
+}
+
+@keyframes teste {
+    10% {background-color: red; left: 0px; top: 50px;}
+    20% {background-color: pink;left: 0px; top: 100px;}
+    30% {background-color: yellow; left: 0px; top: 150px;}
+    40% {background-color: grey; left: 0px; top: 200px;}
+    50% {background-color: cyan; left: 50px; top: 0px;}
+    60% {background-color: purple; left: 100px; top: 0px;}
+    70% {background-color: green; left: 150px; top: 0px}
+    80% {background-color: yellowgreen; left: 200px; top: 0px;}
+    90% {background-color: #ddf320; left:0px; top: 100px;}
+    100% {background-color: black; left: 50px; top: 100px;}
+}
+
