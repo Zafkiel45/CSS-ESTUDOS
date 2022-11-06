@@ -42,6 +42,15 @@ body {
     text-shadow: 5px 2px 3px black ;
 }
 
+.teste-p2:hover{
+    transform: scale3d(2, 0.7, 0.2) translateZ(100px);
+    transform-origin: left;
+    text-shadow: 3px 3px 5px black;
+    transform: translateY(90deg)
+}
 
+.teste-p {
+    translate: 20px 20px 20px ;
+}
 
 
