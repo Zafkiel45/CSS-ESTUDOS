@@ -1,0 +1,24 @@
+.teste {
+    transition-delay: 2s;   /*Atrasa em 2 segundos a transição*/
+}
+
+.teste {
+    transition-duration: 4s; /*A transição dura 4 segundos*/
+}
+
+.teste1 {
+    background-color: black;
+    width: 100px; 
+    transition-property: width; /*Especifica a propriedade que será alterada ao passr o cursor por cima*/
+    transition-duration: 2s;
+
+}
+
+.teste1:hover {
+    width: 500px;
+}
+
+.teste {
+    transition-timing-function: linear; /*Podemos especificar a velocidade de transição no começo, no meio e no fim ou só colocamos como linear*/
+}
+
