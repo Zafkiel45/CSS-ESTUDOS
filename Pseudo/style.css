@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Algumas pseudoclasses para links, não sendo necessáriamente todos os pseudo elemento exlusivo para links*/
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: lightgreen;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: purple;
+}
