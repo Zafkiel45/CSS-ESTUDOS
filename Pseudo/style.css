@@ -10,18 +10,76 @@ a {
 
 /* Algumas pseudoclasses para links, não sendo necessáriamente todos os pseudo elemento exlusivo para links*/
 
-a:link {
+#link:link {
     color: blue;
 }
 
-a:visited {
+#link:visited {
     color: lightgreen;
 }
 
-a:hover {
+#link:hover {
     color: black;
 }
 
-a:active {
+#link:active {
     color: purple;
+}
+
+#focus:focus {
+    color: red;
+}
+
+/* Seleciona o primeiro elemento de um pai */
+
+.item:first-child {
+    color: orange;
+}
+
+/*Seleciona o ultimo elemento de um pai*/
+
+.item:last-child {
+    color: blue;
+}
+
+/* Loading...*/
+
+.tipo:first-of-type {
+    color: red;
+}
+
+.tipo:last-of-type {
+    color: green;
+}
+
+/* fim */
+
+/* Especifica o elemento, classe ou ID que não deve receber as instruções no bloco*/
+
+.item-not:not(.item-no) {
+    color: lightcoral;
+}
+
+/* Seleciona o segundo filho*/
+
+ul > .item-nth:nth-child(2){
+    color: orange;
+}
+
+/* Seleciona o todos os elementos no intervalo de 3*/
+
+ul > .item-nth:nth-child(3n){
+    color: blue;
+}
+
+/* Seleciona todos os elementos par*/
+
+ul > .item-nth:nth-child(even){
+    color: green;
+}
+
+/* Seleciona todos os elementos depois do sexto no intervalo 1 */
+
+ul > .item-nth:nth-child(1n + 6) {
+    color: pink;
 }
