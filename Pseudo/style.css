@@ -8,7 +8,12 @@ a {
     text-decoration: none;
 }
 
+
 /* Algumas pseudoclasses para links, não sendo necessáriamente todos os pseudo elemento exlusivo para links*/
+
+li {
+    margin: 5px;
+}
 
 #link:link {
     color: blue;
@@ -80,6 +85,89 @@ ul > .item-nth:nth-child(even){
 
 /* Seleciona todos os elementos depois do sexto no intervalo 1 */
 
-ul > .item-nth:nth-child(1n + 6) {
+.nth > .item-nth:nth-child(1n + 6) {
     color: pink;
 }
+
+p:nth-last-child(2){
+    /* mesma coisa que o anterior, só que de baixo para cima*/
+    color: white;
+}
+
+
+/* Faz a mesma coisa o nth-child(), só que de forma mais específica */
+.nth-type > .item-type:nth-of-type(2n){
+    color: rgb(255, 17, 57);
+}
+
+
+/* Faz a mesma coisa o nth-child(), só que de forma mais específica e de trás para frente */
+
+.nth-type > .item-type:nth-last-of-type(3n){
+    color: blue;
+}
+
+/* Funciona apenas em elementos cujo o pai tem apenas um filho único */
+
+.alone > li:only-child {
+    color: orange;
+}
+
+#oush:target {
+    color: red;
+}
+
+/* casa com checkbox e input do tipe radio, e é desparado quando a caixa é selecionada */
+
+#check:checked + label {
+    color: red;
+}
+
+
+/* Estiliza inputs desabilitados */
+#text:disabled {
+    opacity: 0.5;
+}
+
+/* estiliza elementos vazios */
+
+.vazio:empty {
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+}
+
+/* estiliza inputs que estão habilitados */
+
+input:enabled {
+    opacity: 1;
+    background-color: rgb(98, 123, 138);
+}
+
+input:in-range {
+    border: 2px solid rgb(0, 246, 0);
+    /* estiliza inputs com min e max definidos. Se for min= 5 e max = 10, então os valores de 5 a 10 vai realizar as intruções passadas*/
+}
+
+input:out-of-range {
+    border: 2px solid orange;
+    /* faz o mesmo que acima, mais para valores fora do min e max */
+}
+
+/**/
+
+input:indeterminate + label {
+    background-color: red;
+    /*estiliza input de check box e input radios cujo não foi específica com checked */
+}
+
+input:valid {
+    border: 2px solid green;
+    /* Estiliza elementos que estão comprindo o formato válido*/
+}
+
+input:invalid {
+    border: 2px solid orange;
+        /* estiliza elementos que não estão comprindo o elemento válido */
+}
+
