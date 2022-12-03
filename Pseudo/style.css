@@ -171,3 +171,40 @@ input:invalid {
         /* estiliza elementos que não estão comprindo o elemento válido */
 }
 
+#opcional:optional {
+    background-color:  purple;
+    /* O optional é usando em Inputs que não possui atributos "required", ou seja, campos que não são obrigatórios */
+}
+
+#readonly:read-only{
+    color: grey;
+    /* Estiliza elementos que possui o atributo "readonly" no html, sendo um input read-only um input que é mostrado, mas não pode ser alterado */
+}
+
+#email:required {
+    background-color: pink;
+    /* Casa com elementos que são obrigátorios*/
+}
+
+.prog::after {
+    content: " , Programador"
+}
+
+.estudant::before {
+    content: "Aluno, "
+}
+
+#texto::first-letter{
+    font-size: 5em;
+    /* APlica apenas na primeira letra do texto*/
+}
+
+#texto::first-line {
+    background-color: orange;
+    /* Casa com a primeira linha de um texto*/
+}
+
+#texto::selection {
+    color: rgb(0, 42, 255);
+    /* Serve apenas para alterar algo quando algum elemento é selecionado */
+}
