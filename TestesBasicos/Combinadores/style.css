@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p a {
+    color: red;
+    text-decoration: none;
+    /* Note  que há um espaço entre os seletores, esse espaço diz para o navegador o seguinte: "Olha, se o "a" estiver dentro do "p", então estiliza ele" ;-; */
+}
+
+.num1, .link1 {
+    color: purple;
+    /* Todos os elementos serão estilizados nesse caso, porém, é necessário a utilização da vírgula para separar os elementos que receberão os estilos*/
+}
+
+.num2 > .link2 {
+    color: yellow;
+    /* Seleciona um elemento de forma mais direta e explícita. O computador entre da seguinte forma: Tudo que estiver dentro de ".num2" e tiver a classe ".link2" deve ser estilizado*/
+}
+
+div + p {
+    background-color: red;
+    /* Em resumo, ao utilizar o combinador "+", ele estiliza o próximo elemento adjacente. Funciona da seguinte forma, quando declarei que div + p, eu disse que o elemento "p" depois da div deve ser estilizado*/
+}
+
+.num3 ~ p {
+    background-color: blue;
+}
+
+p ~ a {
+    color: purple;
+    font-size: 3em;
+    /* Estiliza todos os elementos "a" após o "p" */
+}
