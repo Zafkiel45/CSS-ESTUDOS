@@ -12,11 +12,24 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 20px;
     list-style: none;
     justify-content: center;
 }
+
+@media (max-width: 650px){
+    .grid {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 375px){
+    .grid {
+        grid-template-columns: minmax(100px, 1fr);
+    }
+}
+
 
 
 
