@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25, 133, 227);
+}
+
+.SVG {
+    position: relative;
+    top: 200px;
+    left: 160px;
+    height: 70px;
+    width: 70px;
+    opacity: 0.8
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    margin: auto;
+}
